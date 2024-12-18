@@ -1,0 +1,14 @@
+mixin image(file)
+  - var dimensions = sizeOf("app/assets/img/"+file);
+  - var w=dimensions.width;
+  - var h=dimensions.height;
+  |
+  |
+  img(src=file,width= w,height= h,alt="")&attributes(attributes)
+
+mixin email(email)
+  a(href="mailto:"+email)&attributes(attributes)= email
+
+mixin phone(phone)
+  - var phone_replace = phone.replace(/\D+/g,"");
+  a(href="tel:"+phone_replace)&attributes(attributes)= phone

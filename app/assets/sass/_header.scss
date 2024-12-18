@@ -1,0 +1,12 @@
+@import "components/hamburgers/_hamburgers.scss";
+
+
+.hamburger-wrap {
+  position: relative;
+  z-index: 101;
+
+  .hamburger {
+    position: relative;
+    right: -5px;
+  }
+}

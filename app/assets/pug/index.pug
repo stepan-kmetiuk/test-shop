@@ -1,0 +1,17 @@
+extends layout/layout
+append config
+  - var pageTitle = 'Document';
+  - var overflow_none = 'py-10 bg-pink-100'
+
+block main
+  include includes/header.pug
+  .section-1
+    .container
+      .text-5xl.text-orange-400.my-4.qwer
+        | Lorem
+        | 1.1
+        | 1.2
+        | 1/3
+      .test-q Lorem ipusm
+      +image("../img/img.jpg")
+  include includes/footer.pug
